@@ -1,0 +1,204 @@
+{
+    "properties": {
+        "body": {
+            "properties": {
+                "data": {
+                    "properties": {
+                        "alertContext": {
+                            "properties": {
+                                "AffectedConfigurationItems": {
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "type": "array"
+                                },
+                                "AlertType": {
+                                    "type": "string"
+                                },
+                                "IncludedSearchResults": {
+                                    "type": "string"
+                                },
+                                "LinkToSearchResults": {
+                                    "type": "string"
+                                },
+                                "Operator": {
+                                    "type": "string"
+                                },
+                                "ResultCount": {
+                                    "type": "integer"
+                                },
+                                "SearchIntervalDurationMin": {
+                                    "type": "string"
+                                },
+                                "SearchIntervalEndtimeUtc": {
+                                    "type": "string"
+                                },
+                                "SearchIntervalInMinutes": {
+                                    "type": "string"
+                                },
+                                "SearchIntervalStartTimeUtc": {
+                                    "type": "string"
+                                },
+                                "SearchQuery": {
+                                    "type": "string"
+                                },
+                                "SearchResults": {
+                                    "properties": {
+                                        "dataSources": {
+                                            "items": {
+                                                "properties": {
+                                                    "resourceId": {
+                                                        "type": "string"
+                                                    },
+                                                    "tables": {
+                                                        "items": {
+                                                            "type": "string"
+                                                        },
+                                                        "type": "array"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "resourceId",
+                                                    "tables"
+                                                ],
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "tables": {
+                                            "items": {
+                                                "properties": {
+                                                    "columns": {
+                                                        "items": {
+                                                            "properties": {
+                                                                "name": {
+                                                                    "type": "string"
+                                                                },
+                                                                "type": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "name",
+                                                                "type"
+                                                            ],
+                                                            "type": "object"
+                                                        },
+                                                        "type": "array"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "rows": {
+                                                        "items": {
+                                                            "type": "array"
+                                                        },
+                                                        "type": "array"
+                                                    }
+                                                },
+                                                "required": [
+                                                    "name",
+                                                    "columns",
+                                                    "rows"
+                                                ],
+                                                "type": "object"
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "SeverityDescription": {
+                                    "type": "string"
+                                },
+                                "Threshold": {
+                                    "type": "integer"
+                                },
+                                "WorkspaceId": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "essentials": {
+                            "properties": {
+                                "alertContextVersion": {
+                                    "type": "string"
+                                },
+                                "alertId": {
+                                    "type": "string"
+                                },
+                                "alertRule": {
+                                    "type": "string"
+                                },
+                                "alertTargetIDs": {
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "type": "array"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "essentialsVersion": {
+                                    "type": "string"
+                                },
+                                "firedDateTime": {
+                                    "type": "string"
+                                },
+                                "monitorCondition": {
+                                    "type": "string"
+                                },
+                                "monitoringService": {
+                                    "type": "string"
+                                },
+                                "originAlertId": {
+                                    "type": "string"
+                                },
+                                "severity": {
+                                    "type": "string"
+                                },
+                                "signalType": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "type": "object"
+                },
+                "schemaId": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "headers": {
+            "properties": {
+                "Connection": {
+                    "type": "string"
+                },
+                "Content-Length": {
+                    "type": "string"
+                },
+                "Content-Type": {
+                    "type": "string"
+                },
+                "Expect": {
+                    "type": "string"
+                },
+                "Host": {
+                    "type": "string"
+                },
+                "User-Agent": {
+                    "type": "string"
+                },
+                "X-CorrelationContext": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}
